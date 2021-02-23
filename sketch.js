@@ -1,16 +1,18 @@
 
 var box
 var base1,base2,base3,base4
-var music;
+var musicAmp;
 var edges
 
 function preload(){
-    music = loadSound("music.mp3");
+    musicAmp = loadSound("music.mp3");
 }
 
 
 function setup(){
      createCanvas(800,600);
+    
+    musicAmp.play()
 
  base1=createSprite(700,590,200,20)
  base1.shapeColor="red"
